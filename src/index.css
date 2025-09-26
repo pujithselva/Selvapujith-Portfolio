@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scroll offset for fixed navbar */
+html {
+  scroll-padding-top: 80px;
+}
+
+/* Additional smooth scroll animations */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/* Intersection animation classes */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Grid pattern background */
+.bg-grid-pattern {
+  background-image: radial-gradient(circle, #00000010 1px, transparent 1px);
+  background-size: 20px 20px;
+}

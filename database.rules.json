@@ -1,0 +1,30 @@
+{
+  "rules": {
+    "projects": {
+      ".read": "true",
+      ".write": "auth != null",
+      "$projectId": {
+        ".write": "auth != null"
+      }
+    },
+    "certificates": {
+      ".read": "true",
+      ".write": "auth != null",
+      "$certificateId": {
+        ".write": "auth != null"
+      }
+    },
+    "metadata": {
+      "resume": {
+        ".read": "true",
+        ".write": "auth != null"
+      }
+    },
+    "resume": {
+      "current": {
+        ".read": "true",
+        ".write": "auth != null"
+      }
+    }
+  }
+}
